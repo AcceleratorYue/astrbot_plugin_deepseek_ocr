@@ -1,0 +1,19 @@
+name: astrbot_plugin_deepseek_ocr
+display_name: DeepSeek OCR
+short_desc: 用 DeepSeek OCR 识别引用消息中的图片、PDF、Word、PPT 文字
+desc: >-
+  当用户引用一条带图片或文档的消息并 @Bot 时，调用 DeepSeek OCR 提取文字，
+  作为临时资料注入当前 LLM 请求；支持 /ocr 手动识别当前消息或引用消息中的附件。
+  适合文字截图、PDF、Word、PPT 和扫描件。OCR 只提取文字，不替代视觉模型对图片内容的理解。
+version: 0.1.1
+author: AcceleratorYue
+repo: https://github.com/AcceleratorYue/astrbot_plugin_deepseek_ocr
+social_link: https://github.com/AcceleratorYue
+astrbot_version: ">=4.16,<5"
+support_platforms:
+  - aiocqhttp
+tags:
+  - OCR
+  - 图片
+  - 文件
+  - DeepSeek
